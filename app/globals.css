@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --color-foret:        #1B4332;
+  --color-foret-light:  #2D6A4F;
+  --color-foret-muted:  #9DC8B5;
+  --color-foret-pale:   #EAF3DE;
+  --color-sable:        #F5EDD6;
+  --color-sable-dark:   #EDE4C8;
+  --color-ocre:         #D97706;
+  --color-ocre-light:   #FDE68A;
+  --color-ocre-dark:    #633806;
+  --color-blanc:        #FEFCF8;
+  --color-ardoise:      #1C1C1C;
+  --color-gris:         #6B7280;
+  --color-gris-light:   #E9E4D8;
+  --color-gris-pale:    #F0EDE5;
+
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-sans:    "Inter", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", "Fira Code", monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FEFCF8;
+  color: #1C1C1C;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
